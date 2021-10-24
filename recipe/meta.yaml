@@ -1,5 +1,5 @@
 {% set name = "django-tables2" %}
-{% set version = "2.4.0" %}
+{% set version = "2.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,19 @@ package:
 
 source:
   url: https://github.com/jieter/django-tables2/archive/v{{ version }}.tar.gz
-  sha256: e06bf2b66016bf56ec906828842ec7f1c03c70477d3fd6c1d7341f46230cbb49
+  sha256: 051dbaac5095f7be0e4c003529bd13fa7fcaed7f83d109e8c297a17d2b7009d4
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - django >=2.2
 
 test:
