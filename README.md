@@ -1,11 +1,11 @@
-About django-tables2
-====================
+About django-tables2-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-tables2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jieter/django-tables2
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-tables2-feedstock/blob/main/LICENSE.txt)
 
 Summary: django-tables2 simplifies the task of turning sets of data into HTML tables.
 
