@@ -1,5 +1,5 @@
 {% set name = "django-tables2" %}
-{% set version = "2.5.3" %}
+{% set version = "2.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jieter/django-tables2/archive/v{{ version }}.tar.gz
-  sha256: 052655c00055e1736757ec585a67354094aa4256d28f967eaf362bbe471af05a
+  sha256: bade6c12acdd42c46e1ffe56f4cba80f3b0b7870f6598efecf65104ca5a900d6
 
 build:
   number: 0
