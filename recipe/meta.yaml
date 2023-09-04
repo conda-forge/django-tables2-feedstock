@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - django >=3.2
+    - django >=3.2,!=4.0
 
 test:
   requires:
