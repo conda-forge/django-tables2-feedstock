@@ -1,5 +1,6 @@
 {% set name = "django-tables2" %}
 {% set version = "2.7.0" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -10,21 +11,23 @@ source:
   sha256: 7698643bf943333f9339b8e0e8d23fe860785105885820c480edc3daae35ab08
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - django >=3.2,!=4.0
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - python -c "import django; from django.conf import settings; settings.configure(); django.setup(); import django_tables2;"
@@ -41,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - gscoppino
+    - miguelgomezgomez
